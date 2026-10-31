@@ -1,18 +1,22 @@
-ASMAA — THE GOLDEN WITCH QUEST
+ASMAA — ARCANA PORTFOLIO
 
-A responsive, animated Arabic-first portfolio experience.
+A mobile-first, static portfolio website built with semantic HTML, modern CSS, and vanilla JavaScript.
 
-Run locally: open index.html in a modern browser.
-Deploy: upload the contents of this folder to the root of your GitHub Pages repository.
+FILES
+- index.html: homepage
+- project.html: dynamic project detail page
+- styles.css: responsive visual system, layouts, animations, light/dark theme
+- app.js: interactions, particles, sound synthesis, navigation, reveal animations
+- assets/: existing project visuals, witch illustration, CV
 
-Features:
-- Responsive mobile-first layout
-- Animated witch hero artwork and magical orbit effects
-- Clickable character with randomized dialogue and XP feedback
-- Day/night theme toggle (saved in localStorage)
-- Optional synthesized UI sounds (no external audio files)
-- Scroll progress, reveal animations, active navigation
-- Project quest cards linked to project.html
-- Reduced-motion support
+RUN LOCALLY
+Open index.html in a modern browser. For best results, serve this folder with any static server (for example: VS Code Live Server).
 
-Tech: semantic HTML, modern CSS (grid, clamp, backdrop-filter, custom properties), vanilla JavaScript, IntersectionObserver, Web Audio API.
+DEPLOY TO GITHUB PAGES
+Upload the CONTENTS of this folder to the root of the repository, then select Settings > Pages > Deploy from a branch > main > /(root).
+
+AUDIO NOTE
+Browsers block audible autoplay. The magical notes arm automatically on the visitor's first tap/click/key press; after that, hovering or focusing interactive elements plays the notes. The sound toggle can mute/unmute them.
+
+EDITING
+Project cards and descriptions are in index.html. Project detail metadata is in the projects object inside project.html. Replace or expand the short project summaries with verified case-study details before publishing.
