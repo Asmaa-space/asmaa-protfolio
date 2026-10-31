@@ -1,22 +1,29 @@
-ASMAA — ARCANA PORTFOLIO
+ASMAA — ARCANA / Fantasy Portfolio
+==================================
 
-A mobile-first, static portfolio website built with semantic HTML, modern CSS, and vanilla JavaScript.
+Run locally
+-----------
+Open index.html in a modern browser, or run a local static server from this folder:
+  python3 -m http.server 8000
+Then visit http://localhost:8000
 
-FILES
-- index.html: homepage
-- project.html: dynamic project detail page
-- styles.css: responsive visual system, layouts, animations, light/dark theme
-- app.js: interactions, particles, sound synthesis, navigation, reveal animations
-- assets/: existing project visuals, witch illustration, CV
+Publish on GitHub Pages
+----------------------
+1. Upload the CONTENTS of this folder to the root of your repository.
+2. Keep index.html, project.html, styles.css, app.js, and the assets folder together.
+3. In GitHub: Settings > Pages > Deploy from a branch > main > /(root).
 
-RUN LOCALLY
-Open index.html in a modern browser. For best results, serve this folder with any static server (for example: VS Code Live Server).
+Features
+--------
+- Mobile-first responsive Arabic RTL portfolio.
+- Illustrated fantasy environment and original SVG scene asset.
+- Shared project detail page for the five existing portfolio projects.
+- Magical cursor trail and C-major pentatonic music-box notes using Web Audio API.
+- Audio is armed after the first deliberate mouse/keyboard interaction because browsers block autoplay.
+- Touch devices receive visual sparkles only; touch scrolling never triggers musical notes.
+- Sound toggle, light/dark theme toggle, mobile navigation, scroll progress, reveal transitions,
+  double-tap witch spell, XP toasts, and keyboard easter word (MAGIC).
+- Reduced-motion preference is respected; particle count and animation are reduced.
 
-DEPLOY TO GITHUB PAGES
-Upload the CONTENTS of this folder to the root of the repository, then select Settings > Pages > Deploy from a branch > main > /(root).
-
-AUDIO NOTE
-Browsers block audible autoplay. The magical notes arm automatically on the visitor's first tap/click/key press; after that, hovering or focusing interactive elements plays the notes. The sound toggle can mute/unmute them.
-
-EDITING
-Project cards and descriptions are in index.html. Project detail metadata is in the projects object inside project.html. Replace or expand the short project summaries with verified case-study details before publishing.
+No build step or external JavaScript dependencies are required. Google Fonts are optional;
+the page falls back to system fonts if the network is unavailable.

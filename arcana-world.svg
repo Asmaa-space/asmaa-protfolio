@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#15113d"/><stop offset=".48" stop-color="#30205f"/><stop offset="1" stop-color="#10142f"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffdca0" stop-opacity=".8"/><stop offset="1" stop-color="#b18cff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="island" x2="0" y2="1"><stop stop-color="#9276d8"/><stop offset=".5" stop-color="#4a3a91"/><stop offset="1" stop-color="#171c4d"/></linearGradient>
+ <linearGradient id="portal" x2="0" y2="1"><stop stop-color="#ffd8ef"/><stop offset=".5" stop-color="#9c80ff"/><stop offset="1" stop-color="#4ce5ee"/></linearGradient>
+ <linearGradient id="water" x2="1" y2="0"><stop stop-color="#ef9eea"/><stop offset=".5" stop-color="#8b8cff"/><stop offset="1" stop-color="#55e5e8"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<path fill="url(#sky)" d="M0 0h1600v1000H0z"/>
+<circle cx="1130" cy="260" r="290" fill="url(#glow)" opacity=".7"/>
+<circle cx="1130" cy="260" r="185" fill="#d9b9ff" opacity=".08"/>
+<path d="M0 600Q190 480 350 590T710 570T1050 570T1600 520V1000H0Z" fill="#28215f" opacity=".7"/>
+<path d="M0 710Q250 590 470 700T920 680T1300 670T1600 650V1000H0Z" fill="#171a4b"/>
+<!-- distant floating islands -->
+<g opacity=".8"><path d="M70 370q95-105 205-28 50-75 126-19 76 65 15 124H100q-62-22-30-77Z" fill="#52418e"/><path d="M85 440h305l-60 58-90 24-90-31Z" fill="#28275f"/><path d="M120 493l-42 80 96-42 37 76 38-91 62 48-28-92Z" fill="#27245e"/></g>
+<g opacity=".9"><path d="M1110 480q70-130 190-54 55-90 144-22 65 52 18 117h-320q-66-5-32-41Z" fill="#6853a8"/><path d="M1125 516h340l-50 70-130 35-108-42Z" fill="#28245f"/><path d="M1180 590l-45 82 112-48 47 96 35-104 80 53-43-93Z" fill="#28235f"/></g>
+<!-- portal library arch -->
+<g transform="translate(110 130)"><path d="M30 550V225C30 85 130 0 250 0s220 85 220 225v325" stroke="#d8b4ff" stroke-width="18" opacity=".25"/><path d="M65 550V228C65 110 145 40 250 40s185 70 185 188v322" stroke="url(#portal)" stroke-width="8" opacity=".85"/><path d="M90 550V230C90 128 157 70 250 70s160 58 160 160v320" stroke="#f6c8ff" stroke-width="3" opacity=".8"/><path d="M110 520V235C110 145 170 95 250 95s140 50 140 140v285" fill="#8b70d8" opacity=".12"/><path d="M125 520V240C125 160 178 112 250 112s125 48 125 128v280" fill="url(#portal)" opacity=".08"/><path d="M140 520V240C140 174 190 132 250 132s110 42 110 108v280" stroke="#f8d4fa" stroke-width="2" opacity=".45"/><path d="M0 550h500" stroke="#e9c5ff" stroke-width="9" opacity=".3"/><path d="M90 540q160-55 320 0" stroke="#ffe2a3" stroke-width="5" opacity=".65"/></g>
+<!-- magical stream -->
+<path d="M0 850C250 730 330 950 590 835s360-180 530-45 280 70 480-50" stroke="url(#water)" stroke-width="26" opacity=".16" filter="url(#blur)"/>
+<path d="M0 850C250 730 330 950 590 835s360-180 530-45 280 70 480-50" stroke="url(#water)" stroke-width="4" opacity=".8"/>
+<!-- foreground floating book -->
+<g transform="translate(850 690) rotate(-8)"><path d="M0 45q125-70 260 0v150q-130-60-260 0Z" fill="#e9d9ff" stroke="#9d7fe0" stroke-width="8"/><path d="M260 45q125-70 260 0v150q-130-60-260 0Z" fill="#fff0d8" stroke="#9d7fe0" stroke-width="8"/><path d="M260 48v150" stroke="#8867c7" stroke-width="8"/><path d="M28 82q100-38 200-5M28 108q100-38 200-5M295 82q100-38 200-5M295 108q100-38 200-5" stroke="#9e8cc8" stroke-width="3" opacity=".5"/><path d="M65 0q-30-80 20-130 35 45 8 100" stroke="#f2c8e7" stroke-width="5"/><path d="M520 0q45-75 85-60-4 60-72 90" stroke="#7de4e8" stroke-width="5"/></g>
+<!-- stars -->
+<g fill="#ffe4a5"><path d="M720 120l12 30 30 12-30 12-12 30-12-30-30-12 30-12Z"/><path d="M1370 120l8 21 21 8-21 8-8 21-8-21-21-8 21-8Z"/><path d="M930 400l7 18 18 7-18 7-7 18-7-18-18-7 18-7Z"/><circle cx="550" cy="230" r="5"/><circle cx="1470" cy="370" r="4"/></g>
+<g fill="#9cebf1"><path d="M590 360l8 22 22 8-22 8-8 22-8-22-22-8 22-8Z"/><circle cx="1020" cy="180" r="5"/><circle cx="250" cy="670" r="4"/></g>
+<g fill="#e5a9f5"><path d="M820 280l7 18 18 7-18 7-7 18-7-18-18-7 18-7Z"/><circle cx="1300" cy="740" r="5"/><circle cx="480" cy="140" r="3"/></g>
+<!-- floating feathers -->
+<g stroke="#e9c6ff" stroke-width="4" opacity=".7"><path d="M670 520q-60-90 12-160 15 82-12 160Zm0 0 18-105m-18 105-35-70"/><path d="M1460 650q-60-90 12-160 15 82-12 160Zm0 0 18-105m-18 105-35-70"/></g>
+</svg>
